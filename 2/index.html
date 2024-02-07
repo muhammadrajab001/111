@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Selection Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="images">
+    <img src="image1.jpg" alt="Image 1" class="image" data-correct="true">
+    <img src="image2.jpg" alt="Image 2" class="image" data-correct="false">
+    <img src="image3.jpg" alt="Image 3" class="image" data-correct="false">
+    <img src="image4.jpg" alt="Image 4" class="image" data-correct="false">
+  </div>
+  <div class="message">Select an image</div>
+  <div class="timer">Time: <span id="countdown">60</span> seconds</div>
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Congratulations! You completed the game.</p>
+    <button id="next-site">Go to next site</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
